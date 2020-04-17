@@ -1,6 +1,10 @@
 package geneshay.linkedlist.main;
 
-// Implementation for Singly Linked List
+/**
+ * Basic implementation for Singly Linked List
+ * @param <T> head
+ * @param <T> tail
+ */
 public class SinglyLinkedList<T> {
 
     // private data to prevent direct user access
@@ -9,6 +13,10 @@ public class SinglyLinkedList<T> {
 
     public SinglyLinkedList() {}
 
+    /**
+     * Adds a node to the tail of the Linked List
+     * @param obj
+     */
     public void add(T obj){
         Node node = new Node(obj);
         if ( head == null ) {
